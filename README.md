@@ -15,7 +15,7 @@ This branch is optimized for deployment on Render.
 5. Configure:
    - **Name**: group-harmony-backend
    - **Root Directory**: (leave empty - files are at root)
-   - **Build Command**: `npm install && npm run build`
+   - **Build Command**: `npm install --include=dev && npm run build`
    - **Start Command**: `npm start`
    - **Environment**: Node
 
