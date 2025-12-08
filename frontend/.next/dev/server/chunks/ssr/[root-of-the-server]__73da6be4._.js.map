@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USer/Desktop/Project/group-hramony-app/frontend/src/pages/_document.tsx"],"sourcesContent":["import { Html, Head, Main, NextScript } from 'next/document';\r\n\r\nexport default function Document() {\r\n  return (\r\n    <Html lang=\"en\">\r\n      <Head>\r\n        <meta name=\"description\" content=\"Team grouping application - Automatically assign team members to color-coded groups\" />\r\n        <link rel=\"icon\" href=\"/favicon.ico\" />\r\n      </Head>\r\n      <body>\r\n        <Main />\r\n        <NextScript />\r\n      </body>\r\n    </Html>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,qKAAC,iIAAI;QAAC,MAAK;;0BACT,qKAAC,iIAAI;;kCACH,qKAAC;wBAAK,MAAK;wBAAc,SAAQ;;;;;;kCACjC,qKAAC;wBAAK,KAAI;wBAAO,MAAK;;;;;;;;;;;;0BAExB,qKAAC;;kCACC,qKAAC,iIAAI;;;;;kCACL,qKAAC,uIAAU;;;;;;;;;;;;;;;;;AAInB"}}]
+}

@@ -13,7 +13,7 @@ const GroupCard: React.FC<GroupCardProps> = ({ group, onClick, showMembers = fal
     orange: 'orange',
     blue: 'blue',
     green: 'green',
-    black: 'black',
+    purple: 'black',
   };
 
   const colorAccent = colorMap[group.color.toLowerCase()] || 'blue';

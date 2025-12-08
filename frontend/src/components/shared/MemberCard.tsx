@@ -26,11 +26,11 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, compact = false }) => {
   };
 
   // Map color name to accent
-  const colorMap: Record<string, 'orange' | 'blue' | 'green' | 'purple'> = {
+  const colorMap: Record<string, 'orange' | 'blue' | 'green' | 'black'> = {
     orange: 'orange',
     blue: 'blue',
     green: 'green',
-    purple: 'purple',
+    purple: 'black',
   };
 
   const colorAccent = member.groupColor ? colorMap[member.groupColor.toLowerCase()] || 'blue' : 'blue';
