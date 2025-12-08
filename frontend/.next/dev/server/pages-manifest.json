@@ -1,8 +1,0 @@
-{
-  "/": "pages/index.js",
-  "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/dashboard": "pages/dashboard.js",
-  "/group/[id]": "pages/group/[id].js",
-  "/register": "pages/register.js"
-}
