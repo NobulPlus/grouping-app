@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: 'sm' | 'md' | 'lg';
-  colorAccent?: 'orange' | 'blue' | 'green' | 'black' | 'none';
+  colorAccent?: 'orange' | 'blue' | 'green' | 'purple' | 'none';
   children: React.ReactNode;
 }
 
@@ -20,7 +20,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       orange: 'border-l-4 border-group-orange',
       blue: 'border-l-4 border-group-blue',
       green: 'border-l-4 border-group-green',
-      black: 'border-l-4 border-group-purple',
+      purple: 'border-l-4 border-group-purple',
       none: '',
     };
 
