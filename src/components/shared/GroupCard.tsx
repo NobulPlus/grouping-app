@@ -9,11 +9,12 @@ export interface GroupCardProps {
 }
 
 const GroupCard: React.FC<GroupCardProps> = ({ group, onClick, showMembers = false }) => {
-  const colorMap: Record<string, 'orange' | 'blue' | 'green' | 'black'> = {
+  const colorMap: Record<string, 'orange' | 'blue' | 'green' | 'purple'> = {
     orange: 'orange',
     blue: 'blue',
     green: 'green',
-    black: 'black',
+    black: 'purple',
+    purple: 'purple',
   };
 
   const colorAccent = colorMap[group.color.toLowerCase()] || 'blue';

@@ -30,6 +30,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member, compact = false }) => {
     orange: 'orange',
     blue: 'blue',
     green: 'green',
+    black: 'purple',
     purple: 'purple',
   };
 
