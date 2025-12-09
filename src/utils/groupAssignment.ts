@@ -23,7 +23,7 @@ export class GroupAssigner {
   }
   
   /**
-   * Assign user to the least populated group
+   * Assign user to a randomly selected group from those with the fewest members
    */
   public async assignGroup(): Promise<GroupAssignmentResult> {
     try {
@@ -51,15 +51,22 @@ export class GroupAssigner {
           }
         },
         { $match: { isFull: false } },
-        { $sort: { currentCount: 1, order: 1 } }
+        { $sort: { currentCount: 1 } }
       ]);
       
       if (groups.length === 0) {
         throw new Error('No available groups. All groups may be at full capacity.');
       }
       
-      // Select the group with fewest members
-      const assignedGroup = groups[0];
+      // Find the minimum count
+      const minCount = groups[0].currentCount;
+      
+      // Get all groups with the minimum count
+      const groupsWithMinCount = groups.filter(g => g.currentCount === minCount);
+      
+      // Randomly select one of the groups with minimum count
+      const randomIndex = Math.floor(Math.random() * groupsWithMinCount.length);
+      const assignedGroup = groupsWithMinCount[randomIndex];
       
       // Return assignment result
       return {
