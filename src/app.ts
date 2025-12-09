@@ -30,6 +30,7 @@ class App {
     const allowedOrigins = [
       'http://localhost:3000',
       'http://localhost:3001',
+      'https://grouping-app-3k6f.vercel.app',
       process.env.FRONTEND_URL,
     ].filter(Boolean); // Remove undefined values
 
